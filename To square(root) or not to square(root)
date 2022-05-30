@@ -1,0 +1,8 @@
+import java.util.*;
+public class Kata
+{
+public static int[] squareOrSquareRoot(int[] array)
+{
+return Arrays.stream(array).map(n -> Math.sqrt(n) % 1 == 0 ? (int) Math.sqrt(n) : n * n).toArray();
+}
+} 
